@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number Guessing Game"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@android:color/background_dark"
+        android:textColor="@android:color/white"
+        android:padding="12dp"/>
+
+    <!-- TODO 5: Create EditText for user input -->
+    <EditText
+        android:id="@+id/guessInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your guess (1-100)"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/btnSubmitGuess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Guess"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnResetGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start guessing!"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/counterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guesses: 0"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
+
